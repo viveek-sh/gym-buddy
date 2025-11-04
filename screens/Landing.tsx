@@ -19,9 +19,7 @@ export function Landing(){
     return(
         <div>
             {/* <BannerTop/> */}
-            <Hero/>
-            Hello
-            
+            <Hero/>            
         </div>
     );
 
