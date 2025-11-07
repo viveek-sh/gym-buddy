@@ -26,7 +26,7 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full pt-20 pb-10">
       {/* 🧠 Header */}
       <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
         <MagicBadge title="Core Features" />
@@ -43,7 +43,10 @@ export default function ProcessSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8">
         {Features.map((feature, id) => (
           <MagicCard className="group md:py-8">
-            <div className="flex flex-col items-start justify-center w-full">
+            <div
+              key={id}
+              className="flex flex-col items-start justify-center w-full"
+            >
               <feature.icon
                 strokeWidth={1.5}
                 className="w-10 h-10 text-foreground"
