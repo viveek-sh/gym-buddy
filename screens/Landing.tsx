@@ -9,7 +9,7 @@ import {
 } from "@/components/Banner";
 import { CircleAlert } from "lucide-react";
 import { Hero } from "@/components/Hero";
-import Second from "@/components/second";
+import Second from "@/components/Second";
 import { ShineBorder } from "@/components/ui/shine-border";
 
 function BannerTop() {
