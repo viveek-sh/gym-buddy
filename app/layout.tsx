@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gym Buddy",
-  description: "A modern web app that helps gym-goers follow structured workout splits, calculate fitness metrics like BMI & calories.",
+  description:
+    "A modern web app that helps gym-goers follow structured workout splits, calculate fitness metrics like BMI & calories.",
 };
 
 export default function RootLayout({
@@ -28,10 +29,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        
       >
         <div className="mx-auto w-full lg:max-w-[1440px]">
-          <Navbar/>
+          <Navbar />
           <Providers>{children}</Providers>
         </div>
       </body>
