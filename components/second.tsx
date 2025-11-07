@@ -4,7 +4,7 @@ import MagicBadge from "./ui/magic-badge";
 import { Dumbbell, BarChart3, Share2 } from "lucide-react";
 export default function ProcessSection() {
   // 🧩 Local data (instead of importing from utils)
-  const PROCESS = [
+  const Features = [
     {
       title: "Detailed Exercise Library",
       icon: Dumbbell, // place these under /public/images/
@@ -39,21 +39,21 @@ export default function ProcessSection() {
         </p>
       </div>
 
-      {/* 🪄 Process Cards */}
+      {/**/}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full py-8 gap-4 md:gap-8">
-        {PROCESS.map((process, id) => (
+        {Features.map((feature, id) => (
           <MagicCard className="group md:py-8">
             <div className="flex flex-col items-start justify-center w-full">
-              <process.icon
+              <feature.icon
                 strokeWidth={1.5}
                 className="w-10 h-10 text-foreground"
               />
               <div className="flex flex-col relative items-start">
                 <h3 className="text-base mt-6 font-medium text-foreground">
-                  {process.title}
+                  {feature.title}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  {process.description}
+                  {feature.description}
                 </p>
               </div>
             </div>
