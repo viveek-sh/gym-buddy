@@ -105,7 +105,7 @@ function HeroImageSection() {
     <div className="relative mt-20 px-3 lg:px-0 flex justify-center">
       <div className="relative w-full md:max-w-6xl overflow-hidden rounded-2xl border border-white/5 bg-neutral-950/40 shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md">
         <img
-          src="/hero.jpg"
+          src="/images/hero.jpg"
           alt="Workout Dashboard Preview"
           className="w-full h-auto object-cover"
         />
