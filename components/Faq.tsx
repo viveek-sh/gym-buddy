@@ -34,13 +34,15 @@ export function FAQSection() {
       <div className="absolute inset-0 pointer-events-none [mask-image:radial-gradient(ellipse_at_center,white,transparent_70%)] bg-[radial-gradient(circle_at_center,theme(colors.neutral.800/20)_0%,transparent_50%)]" />
 
       <div className="container max-w-4xl mx-auto relative z-10">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4">
-          Your Questions, Answered.
-        </h2>
-        <p className="text-muted-foreground text-center mb-10 max-w-xl mx-auto">
-          Here are some of the most common questions lifters ask before starting
-          their GymBuddy journey.
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground">
+            Your Questions, <span className="text-emerald-400">Answered</span>
+          </h2>
+          <p className="text-muted-foreground mt-2">
+            Here are some of the most common questions lifters ask before
+            starting their GymBuddy journey.
+          </p>
+        </div>
 
         <Accordion
           type="single"

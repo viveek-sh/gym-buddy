@@ -32,13 +32,16 @@ export function ExploreSection() {
   return (
     <section className="py-20 bg-background">
       <div className="container">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-3 text-center md:text-left">
-          Get to know your GymBuddy.
-        </h2>
-        <p className="text-muted-foreground mb-10 text-center md:text-left max-w-2xl">
-          Explore training programs and tools that help you plan smarter, lift
-          better, and stay consistent.
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-semibold tracking-tight text-foreground">
+            Your Complete Fitness{" "}
+            <span className="text-emerald-400">Fitness</span> Toolkit
+          </h2>
+          <p className="text-muted-foreground mt-2">
+            From structured workout plans to smart calculators, discover tools
+            designed to simplify your fitness journey and enhance performance.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center">
           {cards.map((card, index) => (
