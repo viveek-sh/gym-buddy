@@ -3,6 +3,7 @@ import * as React from "react";
 import { Logo, HamburgerIcon } from "@/components/ui/icons";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -32,10 +33,10 @@ export interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
 }
 // Default navigation links
 const defaultNavigationLinks: NavbarNavLink[] = [
-  { href: "#", label: "Home", active: true },
-  { href: "#plans", label: "Workout Plans" },
-  { href: "#calculators", label: "Calculator" },
-  { href: "#about", label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/plans", label: "Workout Plans" },
+  { href: "/calculators", label: "Calculator" },
+  { href: "/about", label: "About" },
 ];
 export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
   (
@@ -111,8 +112,8 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                     <NavigationMenuList className="flex-col items-start gap-1">
                       {navigationLinks.map((link, index) => (
                         <NavigationMenuItem key={index} className="w-full">
-                          <button
-                            onClick={(e) => e.preventDefault()}
+                          <Link
+                            href={link.href}
                             className={cn(
                               "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground cursor-pointer no-underline",
                               link.active
@@ -121,7 +122,7 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                             )}
                           >
                             {link.label}
-                          </button>
+                          </Link>
                         </NavigationMenuItem>
                       ))}
                     </NavigationMenuList>
@@ -148,8 +149,8 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                   <NavigationMenuList className="gap-1">
                     {navigationLinks.map((link, index) => (
                       <NavigationMenuItem key={index}>
-                        <button
-                          onClick={(e) => e.preventDefault()}
+                        <Link
+                          href={link.href}
                           className={cn(
                             "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer no-underline",
                             link.active
@@ -158,7 +159,7 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                           )}
                         >
                           {link.label}
-                        </button>
+                        </Link>
                       </NavigationMenuItem>
                     ))}
                   </NavigationMenuList>
@@ -186,10 +187,3 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
   }
 );
 Navbar.displayName = "Navbar";
-// export { Logo, HamburgerIcon };
-
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,,,,< AI CODE HERE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></AI>
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
