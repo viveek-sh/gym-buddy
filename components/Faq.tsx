@@ -31,7 +31,7 @@ export function FAQSection() {
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none [mask-image:radial-gradient(ellipse_at_center,white,transparent_70%)] bg-[radial-gradient(circle_at_center,theme(colors.slate.800/20)_0%,transparent_80%)]" />
+      <div className="absolute inset-0 pointer-events-none [mask-image:radial-gradient(ellipse_at_center,white,transparent_70%)] bg-[radial-gradient(circle_at_center,theme(colors.neutral.800/20)_0%,transparent_50%)]" />
 
       <div className="container max-w-4xl mx-auto relative z-10">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4">

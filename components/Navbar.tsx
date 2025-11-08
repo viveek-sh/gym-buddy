@@ -85,7 +85,8 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
       <header
         ref={combinedRef}
         className={cn(
-          "sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-6 [&_*]:no-underline",
+          // "sticky top-0 z-50 w-full border-b bg-background/40 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-6 [&_*]:no-underline",
+          "sticky top-0 z-50 w-full border-b border-neutral-200/20 bg-neutral-border-neutral-200/10 backdrop-blur-xl shadow-xl shadow-neutral-700/7 rounded-b-xl px-4 md:px-6 [&_*]:no-underline supports-[backdrop-filter]:bg-background/20",
           className
         )}
         {...props}
