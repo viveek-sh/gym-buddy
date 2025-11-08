@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import Link from "next/link";
-import MagicBadge from "./ui/magic-badge";
+import { MagicBadge } from "./ui/magic-badge";
 
 interface HeroProps {
   message?: string;

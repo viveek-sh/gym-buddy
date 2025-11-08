@@ -137,10 +137,12 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
                 className="flex items-center space-x-2 text-primary hover:text-primary/90 transition-colors cursor-pointer"
               >
                 <div className="text-2xl">
-                  <Logo />
+                  <Link href="/">
+                    <Logo />
+                  </Link>
                 </div>
                 <span className="font-bold text-lg md:text-xl sm:inline-block">
-                  Gym Buddy
+                  <Link href="/">Gym Buddy</Link>
                 </span>
               </button>
               {/* Navigation menu */}
