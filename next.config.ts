@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   basePath: isProd ? "/gym-buddy" : "",
   assetPrefix: isProd ? "/gym-buddy/" : "",
   images: {
-    unoptimized: true, // Needed for static export
+    unoptimized: true,
   },
 };
 
