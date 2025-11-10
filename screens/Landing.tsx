@@ -9,8 +9,8 @@ import {
 } from "@/components/Banner";
 import { CircleAlert } from "lucide-react";
 import { Hero } from "@/components/Hero";
-import Second from "@/components/Second";
-import { ShineBorder } from "@/components/ui/shine-border";
+import { FeatureSection } from "@/components/Features";
+// import { ShineBorder } from "@/components/ui/shine-border";
 import { ExploreSection } from "@/components/Explore";
 import { FAQSection } from "@/components/Faq";
 
@@ -29,10 +29,12 @@ export function Landing() {
     <div className="overflow-x-hidden scrollbar-hide size-full">
       <Hero />
       <div className="px-5 lg:px-0">
-        <Second />
+        <FeatureSection />
       </div>
       <ExploreSection />
-      <FAQSection />
+      <div className="px-5 lg:px-0">
+        <FAQSection />
+      </div>
       {/* <BannerTop/> */}
       {/* <ShineBorder></ShineBorder> */}
     </div>
