@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { AuroraBackground } from "@/components/ui/aurora-background";
+import { basePath } from "@/lib/utils";
 import Link from "next/link";
 import { MagicBadge } from "./ui/magic-badge";
 
@@ -104,10 +103,12 @@ function HeroImageSection() {
   return (
     <div className="relative mt-20 px-3 lg:px-0 flex justify-center">
       <div className="relative w-full md:max-w-6xl overflow-hidden rounded-2xl border border-white/5 bg-neutral-950/40 shadow-[0_0_40px_rgba(255,255,255,0.05)] backdrop-blur-md">
-        <img
+        <Image
           src="/images/hero.jpg"
           alt="Workout Dashboard Preview"
           className="w-full h-auto object-cover"
+          width={1920}
+          height={1080}
         />
         {/* Gradient overlay on image  */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-900/20 to-neutral-900/60 pointer-events-none" />
