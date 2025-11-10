@@ -1,32 +1,31 @@
 import { SpotlightCard } from "@/components/ui/spotlight-card";
-import { basePath } from "@/lib/utils";
 
 export function ExploreSection() {
   const cards = [
     {
       title: "Bro Split Training",
       category: "Workout Plan",
-      image: basePath("/images/bro-split.jpg"),
+      image: "./images/bro-split.jpg",
     },
     {
       title: "Push Pull Legs Split",
       category: "Workout Plan",
-      image: basePath("/images/ppl.webp"),
+      image: "./images/ppl.webp",
     },
     {
       title: "Upper Lower Split",
       category: "Workout Plan",
-      image: basePath("/images/upperlower.webp"),
+      image: "./images/upperlower.webp",
     },
     {
       title: "BMI Calculator",
       category: "Fitness Tool",
-      image: basePath("/images/bmi.jpg"),
+      image: "./images/bmi.jpg",
     },
     {
       title: "Calorie Calculator",
       category: "Nutrition",
-      image: basePath("/images/calories.webp"),
+      image: "./images/calories.webp",
     },
   ];
 
