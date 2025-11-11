@@ -11,8 +11,6 @@ import {
   Coins,
   HelpCircle,
   Activity,
-  Info,
-  Settings,
 } from "lucide-react";
 
 export function FAQSection() {
@@ -42,9 +40,9 @@ export function FAQSection() {
       icon: Coins,
     },
     {
-      question: "How does GymBuddy track my progress?",
+      question: "Does GymBuddy include progress tracking?",
       answer:
-        "By letting you log workouts, monitor calories, and visualize your progress across sessions for a clearer growth picture.",
+        "Currently, GymBuddy focuses on structured workout planning and form guidance. Progress tracking will be part of future updates.",
       icon: Activity,
     },
     {
@@ -82,7 +80,6 @@ export function FAQSection() {
           </p>
         </div>
 
-        {/* Two-Column Layout */}
         <div className="grid gap-8 md:grid-cols-2">
           {[left, right].map((column, i) => (
             <Accordion
