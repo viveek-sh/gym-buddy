@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { basePath } from "@/lib/utils";
 import Link from "next/link";
 import { MagicBadge } from "./ui/magic-badge";
 
