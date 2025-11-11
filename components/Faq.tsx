@@ -109,17 +109,6 @@ export function FAQSection() {
             </Accordion>
           ))}
         </div>
-
-        {/* Footer note */}
-        <p className="text-sm text-muted-foreground mt-10 text-center">
-          Still have questions?{" "}
-          <a
-            href="/faq"
-            className="font-medium text-primary hover:underline underline-offset-4"
-          >
-            View all FAQs →
-          </a>
-        </p>
       </div>
     </section>
   );
