@@ -74,20 +74,8 @@ export default function SplitGrid({
   categories,
 }: TrainingSplitSectionProps) {
   return (
-    <section className="py-20">
+    <section className="pb-20">
       <div className="container max-w-6xl mx-auto px-6">
-        {/* 🏋️ Header */}
-        <div className="text-center mb-10">
-          <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-            {title.split(highlight)[0]}
-            <span className="text-emerald-400">{highlight}</span>
-            {title.split(highlight)[1] || ""}
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            {description}
-          </p>
-        </div>
-
         {/* 💪 Grid */}
         <div
           className={`grid gap-8 ${
