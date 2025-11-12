@@ -6,26 +6,31 @@ export function ExploreSection() {
       title: "Bro Split Training",
       category: "Workout Plan",
       image: "./images/bro-split.jpg",
+      href: "/plans/bro-split",
     },
     {
       title: "Push Pull Legs Split",
       category: "Workout Plan",
       image: "./images/ppl.webp",
+      href: "/plans/ppl",
     },
     {
       title: "Upper Lower Split",
       category: "Workout Plan",
       image: "./images/upperlower.webp",
+      href: "/plans/upperlower",
     },
     {
       title: "BMI Calculator",
-      category: "Fitness Tool",
+      category: "Fitness Calculator",
       image: "./images/bmi.jpg",
+      href: "/calculators",
     },
     {
       title: "Calorie Calculator",
-      category: "Nutrition",
+      category: "Fitness Calculator",
       image: "./images/calories.webp",
+      href: "/calculators#calorie",
     },
   ];
 

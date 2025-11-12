@@ -29,12 +29,12 @@ const Hero = ({
   heading = "Built for Lifters. Powered by Science.",
   description = "From advanced workout plans to real-time nutrition tracking — GymBuddy gives you the control to train the way you were meant to.",
   cta1 = {
-    text: "Get Started",
-    url: "#",
+    text: "Explore Splits",
+    url: "/calculators",
   },
   cta2 = {
-    text: "CTA 2",
-    url: "#",
+    text: "Calculators",
+    url: "/calculators",
   },
 }: HeroProps) => {
   return (

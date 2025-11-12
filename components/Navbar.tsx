@@ -29,7 +29,6 @@ export interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
   ctaText?: string;
   ctaHref?: string;
   onSignInClick?: () => void;
-  onCtaClick?: () => void;
 }
 // Default navigation links
 const defaultNavigationLinks: NavbarNavLink[] = [
@@ -46,8 +45,7 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
       logoHref = "#",
       navigationLinks = defaultNavigationLinks,
       ctaText = "Get Started",
-      ctaHref = "#get-started",
-      onCtaClick,
+      ctaHref = "/plans",
       ...props
     },
     ref
@@ -172,16 +170,14 @@ export const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
           {/* Right side */}
           <div className="flex items-center gap-3">
             {/* Add Right Side Comp Here (Sign In in Future) */}
-            <Button
-              size="sm"
-              className="text-sm font-medium px-3 h-9 rounded-md shadow-sm"
-              onClick={(e) => {
-                e.preventDefault();
-                if (onCtaClick) onCtaClick();
-              }}
-            >
-              {ctaText}
-            </Button>
+            <Link href={ctaHref}>
+              <Button
+                size="sm"
+                className="text-sm font-medium px-3 h-9 rounded-md shadow-sm"
+              >
+                {ctaText}
+              </Button>
+            </Link>
           </div>
         </div>
       </header>

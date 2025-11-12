@@ -1,41 +1,46 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, BarChart3, Dumbbell, ShieldCheck } from "lucide-react";
+import {
+  Dumbbell,
+  CalendarCheck2,
+  Calculator,
+  MonitorSmartphone,
+} from "lucide-react";
 
 export function FeatureSection() {
   const features = [
     {
-      title: "Smart Workout Suggestions",
+      title: "Structured Workout Splits",
       description:
-        "Get personalized training recommendations powered by AI to optimize your strength and recovery balance.",
-      icon: "ai",
+        "Access popular training styles like Bro Split, Push–Pull–Legs, and Upper–Lower — organized for effective progress and recovery.",
+      icon: "Dumbbell",
     },
     {
-      title: "Progress Tracking & Analytics",
+      title: "Day-Wise Exercise Plans",
       description:
-        "Track your improvements across sessions with detailed charts and insights that help you stay consistent.",
-      icon: "analytics",
+        "Each workout includes exercises, sets, reps, rest times, and form notes — all displayed in a clean table layout.",
+      icon: "Calendar",
     },
     {
-      title: "Adaptive Routines",
+      title: "Fitness Calculators",
       description:
-        "Your plan adjusts as you improve—ensuring your training always stays challenging yet achievable.",
-      icon: "workout",
+        "Built-in BMI and calorie calculators help you monitor your stats and set realistic goals.",
+      icon: "Calculator",
     },
     {
-      title: "Privacy & Secure Data",
+      title: "Clean & Minimal Interface",
       description:
-        "All your workout data and stats are stored securely with end-to-end encryption and privacy by design.",
-      icon: "security",
+        "A dark, modern UI built with Next.js and ShadCN UI — functional, aesthetic, and distraction-free.",
+      icon: "ui",
     },
   ] as const;
 
   const iconMap = {
-    ai: Brain,
-    analytics: BarChart3,
-    workout: Dumbbell,
-    security: ShieldCheck,
+    Dumbbell: Dumbbell,
+    Calendar: CalendarCheck2,
+    Calculator: Calculator,
+    ui: MonitorSmartphone,
   };
 
   return (

@@ -34,7 +34,7 @@ const Footer = () => {
               <ul className="mt-4 text-sm text-muted-foreground">
                 <li className="mt-2">
                   <Link
-                    href=""
+                    href="/plans/bro-split"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     Bro Split
@@ -42,7 +42,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href=""
+                    href="/plans/ppl"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     PPl
@@ -50,7 +50,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href=""
+                    href="/plans/upperlower"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     Upper Lower
@@ -63,7 +63,7 @@ const Footer = () => {
               <ul className="mt-4 text-sm text-muted-foreground">
                 <li className="">
                   <Link
-                    href=""
+                    href="/calculators"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     BMI
@@ -71,20 +71,20 @@ const Footer = () => {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href=""
+                    href="/calculators#calorie"
                     className="hover:text-foreground transition-all duration-300"
                   >
-                    TDEE
+                    Calories
                   </Link>
                 </li>
-                <li className="mt-2">
+                {/* <li className="mt-2">
                   <Link
                     href=""
                     className="hover:text-foreground transition-all duration-300"
                   >
                     Daily Intake Goal
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="/resources/help"
+                    href="/about"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     About Us
@@ -110,7 +110,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="/privacy"
+                    href="/about#contact"
                     className="hover:text-foreground transition-all duration-300"
                   >
                     Contact Us
