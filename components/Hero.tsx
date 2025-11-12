@@ -30,7 +30,7 @@ const Hero = ({
   description = "From advanced workout plans to real-time nutrition tracking — GymBuddy gives you the control to train the way you were meant to.",
   cta1 = {
     text: "Explore Splits",
-    url: "/calculators",
+    url: "/plansgiut",
   },
   cta2 = {
     text: "Calculators",

@@ -1,4 +1,4 @@
-import { CategoryCard } from "@/components/Category-grid";
+import { CategoryCard } from "@/components/CategoryGrid";
 const Splits = [
   {
     name: "Bro Split",
