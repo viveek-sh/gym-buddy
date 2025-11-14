@@ -1,14 +1,6 @@
 import SplitGrid from "@/components/Split";
-import {
-  Dumbbell,
-  CheckCircle2,
-  XCircle,
-  Clock,
-  HeartPulse,
-  Activity,
-} from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
 import Image from "next/image";
-// import { BroSplitCTA } from "@/components/BroSplitCTA";
 
 const categories = [
   {
@@ -16,7 +8,7 @@ const categories = [
     description:
       "Target your chest with compound presses and isolation exercises for strength and fullness.",
     image: "/images/chest.jpg",
-    href: "/plans/chest-day",
+    href: "/plans/bro-split/chest",
   },
   {
     title: "Back Day",
@@ -161,4 +153,3 @@ export default function BroSplitPage() {
     </div>
   );
 }
-
