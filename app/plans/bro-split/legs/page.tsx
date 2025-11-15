@@ -73,7 +73,7 @@ export default function LegsDayPage() {
     {
       name: "Barbell Back Squat",
       description:
-        "King of lower-body strength. Great for quads, glutes, and overall leg mass. If you lack mobility or experience, start with Goblet Squats.",
+        "King of lower-body strength. If you're already doing Hack Squat, you can skip Back Squat — choose ONE heavy squat pattern.",
       keyPoints: [
         "Keep chest up and core braced.",
         "Sit between your hips, not forward.",
@@ -91,7 +91,7 @@ export default function LegsDayPage() {
     {
       name: "Goblet Squat",
       description:
-        "A beginner-friendly squat that teaches proper form and depth without needing a barbell.",
+        "A beginner-friendly squat. If you perform Goblet Squats, you may SKIP Leg Press because both target similar quad patterns in a beginner-safe way.",
       keyPoints: [
         "Hold the dumbbell close to the chest.",
         "Push knees out during descent.",
@@ -109,7 +109,7 @@ export default function LegsDayPage() {
     {
       name: "Hack Squat / Smith Squat",
       description:
-        "A highly stable variation that allows safe quad-focused training. Some gyms won't have a hack squat — Smith Squat is a very good alternative.",
+        "A very stable quad-dominant squat variation. If you do Hack/Smith Squat, skip Barbell Back Squat — pick ONE main squat movement.",
       keyPoints: [
         "Feet slightly forward for more quad bias.",
         "Control the negative slowly.",
@@ -127,10 +127,10 @@ export default function LegsDayPage() {
     {
       name: "Leg Press",
       description:
-        "Lets you safely load the quads with high volume. Great for hypertrophy and burnout sets.",
+        "Great for quad volume. If Goblet Squats are already performed, you may SKIP Leg Press to avoid redundant movement patterns.",
       keyPoints: [
-        "Do not go too shallow — aim for deep ROM.",
-        "Keep lower back glued to the pad.",
+        "Aim for deep ROM but maintain lower-back contact.",
+        "Control the weight — don’t bounce.",
         "Foot placement determines muscle bias.",
       ],
       alternatives: ["Hack Squat", "Bulgarian Split Squat"],
@@ -145,10 +145,10 @@ export default function LegsDayPage() {
     {
       name: "Bulgarian Split Squat",
       description:
-        "Unilateral powerhouse. Brutal for quads and glutes; fixes strength imbalances quickly.",
+        "Unilateral powerhouse. Amazing for glutes and quads. No need to go super heavy — control is everything.",
       keyPoints: [
-        "Keep front knee tracking over toes.",
         "Stay upright for more quad bias.",
+        "Front knee can travel past the toes.",
         "Go slow and controlled.",
       ],
       alternatives: ["Walking Lunges", "Step-Ups"],
@@ -164,11 +164,7 @@ export default function LegsDayPage() {
       name: "Leg Extension",
       description:
         "Pure quad isolation — perfect for finishing a workout and achieving full quad contraction.",
-      keyPoints: [
-        "Control each rep — slow eccentric.",
-        "Do not swing the weight.",
-        "Squeeze hard at the top.",
-      ],
+      keyPoints: ["Slow eccentric", "Hard squeeze at top", "No swinging"],
       alternatives: ["Sissy Squat", "Front Squat"],
       sets: "3 Working Sets",
       reps: "12–15 Reps",
@@ -181,17 +177,13 @@ export default function LegsDayPage() {
     {
       name: "Leg Curl",
       description:
-        "Primary hamstring isolation movement. Seated version targets both hip & knee flexion better.",
+        "Primary hamstring isolation movement. Seated version is biomechanically superior.",
       keyPoints: [
-        "Keep hips glued to the pad.",
-        "Slow stretch at the top.",
-        "Avoid swinging or jerking.",
+        "Hips glued to pad",
+        "Slow stretch",
+        "Avoid swinging or jerking",
       ],
-      alternatives: [
-        "Romanian Deadlift",
-        "Lying Leg Curl",
-        "Standing Leg Curl",
-      ],
+      alternatives: ["Romanian Deadlift", "Standing Leg Curl"],
       sets: "3 Working Sets",
       reps: "12–15 Reps",
       images: [
@@ -203,11 +195,11 @@ export default function LegsDayPage() {
     {
       name: "Standing / Seated Calf Raises",
       description:
-        "Calves respond best to slow eccentrics and deep stretch. Use both bent-knee and straight-knee variations.",
+        "Calves respond best to deep stretch + full contraction. Use both bent-knee and straight-knee variations.",
       keyPoints: [
-        "Go full ROM — deep stretch & hard squeeze.",
-        "Do not bounce from the bottom.",
-        "Use moderate weight and higher reps.",
+        "Deep stretch at bottom",
+        "Hard squeeze at top",
+        "Slow reps for best growth",
       ],
       alternatives: ["Leg Press Calf Raises", "Smith Machine Calf Raises"],
       sets: "4 Working Sets",
@@ -224,7 +216,7 @@ export default function LegsDayPage() {
       <WorkoutOutlineTable
         title="Leg Day — Bro Split Outline"
         workouts={legWorkouts}
-        note="Do proper warmups. Choose whichever variation fits your mobility and biomechanics. All listed variations are excellent — train smartly."
+        note="Do proper warmups. Pick ONE: Back Squat or Hack/Smith Squat. If you perform Goblet Squats, you can skip Leg Press. All variations are excellent — choose according to your mobility and biomechanics."
       />
 
       <WorkoutCard

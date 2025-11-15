@@ -15,35 +15,35 @@ const categories = [
     description:
       "Develop a strong and wide back through rows, pull-ups, and deadlift variations.",
     image: "/images/back.jpg",
-    href: "/plans/back-day",
+    href: "/plans/bro-split/back",
   },
   {
     title: "Shoulder Day",
     description:
       "Build capped delts with overhead presses, lateral raises, and rear delt work.",
     image: "/images/shoulder.jpg",
-    href: "/plans/shoulder-day",
+    href: "/plans/bro-split/shoulder",
   },
   {
     title: "Arms Day",
     description:
       "Isolate your biceps and triceps with focused curls, extensions, and pump-inducing supersets.",
     image: "/images/arms.jpg",
-    href: "/plans/arms-day",
+    href: "/plans/bro-split/arms",
   },
   {
     title: "Leg Day",
     description:
       "Hit quads, hamstrings, and glutes with squats, lunges, and heavy compound movements.",
     image: "/images/leg.jpg",
-    href: "/plans/leg-day",
+    href: "/plans/bro-split/legs",
   },
   {
     title: "Core & Cardio",
     description:
       "End your week with light cardio and core work to improve stability and endurance.",
     image: "/images/homeworkout.jpg",
-    href: "/plans/core-cardio",
+    href: "/plans/bro-split/core-cardio",
   },
 ];
 
@@ -134,8 +134,7 @@ export default function BroSplitPage() {
             (day, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-zinc-600 bg-card/40 backdrop-blur-sm p-4"
-              >
+                className="rounded-xl border border-zinc-600 bg-card/40 backdrop-blur-sm p-4">
                 <p className="text-sm text-foreground">Day {i + 1}</p>
                 <h4 className="text-foreground font-medium">{day}</h4>
               </div>
