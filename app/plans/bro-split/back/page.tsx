@@ -68,7 +68,7 @@ export default function BackDayPage() {
       reps: "5–8 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/deadlift-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/deadlift-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/deadlift-2.webp" },
       ],
     },
 
@@ -85,8 +85,8 @@ export default function BackDayPage() {
       sets: "3 Working Sets",
       reps: "8–12 Reps",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/latpd-1.gif" },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/latpd-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/latpd-3.gif" },
       ],
     },
 
@@ -126,7 +126,7 @@ export default function BackDayPage() {
       reps: "10–15 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/cablerow-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/cablerow-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/cablerow-3.gif" },
       ],
     },
 
@@ -166,7 +166,7 @@ export default function BackDayPage() {
       reps: "8–12 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/bbrow-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/bbrow-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/bbrow-2.webp" },
       ],
     },
   ];

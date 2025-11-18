@@ -83,7 +83,7 @@ export default function LegsDayPage() {
       sets: "3 Working Sets",
       reps: "6–10 Reps",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/squat-1.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/squat-1.webp" },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/squat-2.gif" },
       ],
     },
@@ -120,7 +120,7 @@ export default function LegsDayPage() {
       reps: "8–12 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/hack-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/hack-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/hack-2.webp" },
       ],
     },
 
@@ -137,7 +137,7 @@ export default function LegsDayPage() {
       sets: "3 Working Sets",
       reps: "10–15 Reps",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/legpress-1.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/legpress-2.webp" },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/legpress-2.gif" },
       ],
     },
@@ -206,7 +206,7 @@ export default function LegsDayPage() {
       reps: "12–20 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/calf-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/calf-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/calf-2.webp" },
       ],
     },
   ];

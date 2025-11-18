@@ -64,9 +64,6 @@ export default function ChestDayPage() {
       reps: "8–12 Reps",
       images: [
         {
-          src: "https://gymbuddy.cdn.viveksahu.dev/images/Machine-press-1.gif",
-        },
-        {
           src: "https://gymbuddy.cdn.viveksahu.dev/images/Machine-Press-2.gif",
         },
         {
@@ -94,9 +91,6 @@ export default function ChestDayPage() {
       reps: "8–12 Reps",
       images: [
         {
-          src: "https://gymbuddy.cdn.viveksahu.dev/images/flat-bench-1.gif",
-        },
-        {
           src: "https://gymbuddy.cdn.viveksahu.dev/images/flat-bench-2.gif",
         },
         {
@@ -122,9 +116,6 @@ export default function ChestDayPage() {
       sets: "3 Working Sets",
       reps: "8–12 Reps",
       images: [
-        {
-          src: "https://gymbuddy.cdn.viveksahu.dev/images/incline-bench-1.gif",
-        },
         {
           src: "https://gymbuddy.cdn.viveksahu.dev/images/incline-bench-2.gif",
         },
@@ -153,9 +144,6 @@ export default function ChestDayPage() {
         {
           src: "https://gymbuddy.cdn.viveksahu.dev/images/cable-crossover-2.gif",
         },
-        {
-          src: "https://gymbuddy.cdn.viveksahu.dev/images/cable-crossover-3.jpg",
-        },
       ],
     },
 
@@ -172,7 +160,6 @@ export default function ChestDayPage() {
       sets: "3 Working Sets",
       reps: "8–12 Reps",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/dips-1.gif" },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/dips-2.gif" },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/dips-3.avif" },
       ],
