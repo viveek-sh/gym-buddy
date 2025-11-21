@@ -80,7 +80,9 @@ export default function CoreCardioDayPage() {
       sets: "3 Working Sets",
       reps: "12–15 Reps",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/cable-crunch-1.gif" },
+        {
+          src: "https://gymbuddy.cdn.viveksahu.dev/images/cable-crunch-1.webp",
+        },
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/cable-crunch-2.gif" },
       ],
     },
@@ -102,7 +104,7 @@ export default function CoreCardioDayPage() {
       sets: "1 Burst",
       reps: "2–4 Minutes",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/treadmill-1.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/treadmill-1.jpeg" },
       ],
     },
 
@@ -124,7 +126,7 @@ export default function CoreCardioDayPage() {
       reps: "10–15 Reps",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/leg-raise-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/leg-raise-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/leg-raise-2.webp" },
       ],
     },
 
@@ -140,7 +142,7 @@ export default function CoreCardioDayPage() {
       alternatives: ["Air Bike", "Row Sprints", "Elliptical HIIT"],
       sets: "1 Burst",
       reps: "2–4 Minutes",
-      images: [{ src: "https://gymbuddy.cdn.viveksahu.dev/images/bike-1.gif" }],
+      images: [{ src: "https://gymbuddy.cdn.viveksahu.dev/images/bike-1.jpg" }],
     },
 
     // WOODCHOPPERS
@@ -161,7 +163,7 @@ export default function CoreCardioDayPage() {
       reps: "12–15 Each Side",
       images: [
         { src: "https://gymbuddy.cdn.viveksahu.dev/images/woodchopper-1.gif" },
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/woodchopper-2.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/woodchopper-2.webp" },
       ],
     },
 
@@ -175,7 +177,7 @@ export default function CoreCardioDayPage() {
       sets: "1 Working Set",
       reps: "45–60 Seconds",
       images: [
-        { src: "https://gymbuddy.cdn.viveksahu.dev/images/plank-1.gif" },
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/plank-1.webp" },
       ],
     },
 
@@ -191,7 +193,9 @@ export default function CoreCardioDayPage() {
       alternatives: ["Row Machine", "Bike Machine", "Incline Walk"],
       sets: "1 Finisher",
       reps: "5–10 Minutes",
-      images: [{ src: "https://gymbuddy.cdn.viveksahu.dev/images/row-1.gif" }],
+      images: [
+        { src: "https://gymbuddy.cdn.viveksahu.dev/images/elliptical-1.jpg" },
+      ],
     },
   ];
 
