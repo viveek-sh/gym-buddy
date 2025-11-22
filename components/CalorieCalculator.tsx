@@ -11,7 +11,9 @@ export function CalorieCalculator() {
   const [gender, setGender] = useState("male");
   const [activity, setActivity] = useState("1.2");
   const [goal, setGoal] = useState("maintain");
-  const [calories, setCalories] = useState<number | null>(null);
+
+  const [bmr, setBmr] = useState<number | null>(null);
+  const [tdee, setTdee] = useState<number | null>(null);
 
   const handleCalculate = () => {
     if (!weight || !height || !age) return;
@@ -20,19 +22,34 @@ export function CalorieCalculator() {
     const h = parseFloat(height);
     const a = parseFloat(age);
 
-    // Mifflin-St Jeor BMR formula
-    let bmr =
+    // BMR Formula (Mifflin-St Jeor)
+    const calculatedBmr =
       gender === "male"
         ? 10 * w + 6.25 * h - 5 * a + 5
         : 10 * w + 6.25 * h - 5 * a - 161;
 
-    let tdee = bmr * parseFloat(activity);
+    const calculatedTdee = calculatedBmr * parseFloat(activity);
 
-    // Adjust based on goal
-    if (goal === "lose") tdee *= 0.8; // -20%
-    if (goal === "gain") tdee *= 1.15; // +15%
+    setBmr(calculatedBmr);
+    setTdee(calculatedTdee);
+  };
 
-    setCalories(tdee);
+  const getGoalCalories = () => {
+    if (!tdee) return null;
+
+    switch (goal) {
+      case "maintain":
+        return Math.round(tdee);
+
+      case "lose":
+        return `${Math.round(tdee - 500)} – ${Math.round(tdee - 300)} kcal/day`;
+
+      case "gain":
+        return `${Math.round(tdee + 200)} – ${Math.round(tdee + 300)} kcal/day`;
+
+      default:
+        return null;
+    }
   };
 
   return (
@@ -43,7 +60,9 @@ export function CalorieCalculator() {
           Calorie Calculator
         </CardTitle>
       </CardHeader>
+
       <CardContent className="space-y-4">
+        {/* Inputs */}
         <div className="grid grid-cols-2 gap-4">
           <input
             type="number"
@@ -66,16 +85,17 @@ export function CalorieCalculator() {
             onChange={(e) => setAge(e.target.value)}
             className="rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-emerald-500/40"
           />
+
           <select
             value={gender}
             onChange={(e) => setGender(e.target.value)}
-            className="rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40"
-          >
+            className="rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40">
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
         </div>
 
+        {/* Activity */}
         <div>
           <label className="text-sm text-muted-foreground block mb-2 text-left">
             Activity Level
@@ -83,8 +103,7 @@ export function CalorieCalculator() {
           <select
             value={activity}
             onChange={(e) => setActivity(e.target.value)}
-            className="w-full rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40"
-          >
+            className="w-full rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40">
             <option value="1.2">Sedentary (little to no exercise)</option>
             <option value="1.375">Lightly active (1–3 days/week)</option>
             <option value="1.55">Moderately active (3–5 days/week)</option>
@@ -93,6 +112,7 @@ export function CalorieCalculator() {
           </select>
         </div>
 
+        {/* Goal */}
         <div>
           <label className="text-sm text-muted-foreground block mb-2 text-left">
             Fitness Goal
@@ -100,34 +120,44 @@ export function CalorieCalculator() {
           <select
             value={goal}
             onChange={(e) => setGoal(e.target.value)}
-            className="w-full rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40"
-          >
+            className="w-full rounded-lg border border-border bg-background/60 p-3 text-sm text-foreground focus:ring-2 focus:ring-emerald-500/40">
             <option value="maintain">Maintain weight</option>
             <option value="lose">Lose weight</option>
-            <option value="gain">Gain weight</option>
+            <option value="gain">Gain muscle</option>
           </select>
         </div>
 
+        {/* Button */}
         <button
           onClick={handleCalculate}
-          className="w-full rounded-lg bg-emerald-500 text-white font-medium py-2 hover:bg-emerald-400 transition-all"
-        >
-          Calculate Calories
+          className="w-full rounded-lg bg-emerald-500 text-white font-medium py-2 hover:bg-emerald-400 transition-all">
+          Calculate
         </button>
 
-        {calories && (
-          <div className="mt-4 text-center">
-            <p className="text-foreground font-semibold text-lg">
-              Estimated Calories: {Math.round(calories)} kcal/day
+        {/* Results */}
+        {tdee && (
+          <div className="mt-4 space-y-4 text-center">
+            <p className="text-base font-medium text-foreground">
+              <span className="text-muted-foreground">BMR:</span>{" "}
+              <span className="text-emerald-400">
+                {Math.round(bmr!)} kcal/day
+              </span>
             </p>
-            <p className="text-sm text-muted-foreground">
-              To{" "}
-              {goal === "lose"
-                ? "lose weight"
-                : goal === "gain"
-                ? "gain weight"
-                : "maintain"}{" "}
-              — eat approximately this much daily.
+
+            {/* ONLY SELECTED GOAL OUTPUT */}
+            <div className="mt-4 text-center">
+              <p className="text-foreground font-semibold text-lg">
+                Target Calories:
+              </p>
+
+              <p className="text-emerald-400 font-semibold text-xl">
+                {getGoalCalories()}
+              </p>
+            </div>
+
+            <p className="text-xs text-muted-foreground mt-3">
+              These are general estimates, track your progress and adjust
+              accordingly.
             </p>
           </div>
         )}
