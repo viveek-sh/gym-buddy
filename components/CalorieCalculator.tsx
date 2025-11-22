@@ -42,10 +42,10 @@ export function CalorieCalculator() {
         return Math.round(tdee);
 
       case "lose":
-        return `${Math.round(tdee - 500)} – ${Math.round(tdee - 300)} kcal/day`;
+        return `${Math.round(tdee - 500)} - ${Math.round(tdee - 300)} kcal/day`;
 
       case "gain":
-        return `${Math.round(tdee + 200)} – ${Math.round(tdee + 300)} kcal/day`;
+        return `${Math.round(tdee + 200)} - ${Math.round(tdee + 300)} kcal/day`;
 
       default:
         return null;
