@@ -21,8 +21,7 @@ export function ContactCard() {
         <div className="flex flex-col sm:flex-row justify-center gap-6 mt-4">
           <Link
             href="mailto:in.viveksahu@gmail.com"
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition"
-          >
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition">
             <Mail className="w-4 h-4" /> Email
           </Link>
 
@@ -30,8 +29,7 @@ export function ContactCard() {
             href="https://github.com/viveek-sh"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition"
-          >
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition">
             <Github className="w-4 h-4" /> GitHub
           </Link>
 
@@ -39,26 +37,15 @@ export function ContactCard() {
             href="https://www.linkedin.com/in/viveek-sh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition"
-          >
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition">
             <Linkedin className="w-4 h-4" /> LinkedIn
-          </Link>
-
-          <Link
-            href="https://x.com/viveek_sh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition"
-          >
-            <Twitter className="w-4 h-4" /> Twitter
           </Link>
 
           <Link
             href="https://viveksahu.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition"
-          >
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card/20 px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300 hover:bg-card/40 transition">
             <Globe className="w-4 h-4" /> viveksahu.com
           </Link>
         </div>
